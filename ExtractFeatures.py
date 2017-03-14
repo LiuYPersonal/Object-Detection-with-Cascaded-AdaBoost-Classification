@@ -18,8 +18,6 @@ def Haar_detector(img,N_features):
     #integral image
     integral_img=np.cumsum(np.cumsum(grey,axis=0),axis=1)
     #compute feature
-    #Referring https://engineering.purdue.edu/kak/computervision/ECE661_Fall2014/Website/Homeworks/HW10/2BestSolutions/2.pdf
-
     feature=np.zeros(N_features,dtype='int')
     r=int(rows/2)
     c=int(cols/2)
